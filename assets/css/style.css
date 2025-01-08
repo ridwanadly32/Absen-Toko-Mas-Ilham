@@ -1,0 +1,285 @@
+/* Reset beberapa default style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    text-align: center; /* Menambahkan ini untuk memastikan teks rata tengah */
+}
+
+/* Kontainer utama untuk menempatkan semua konten di tengah */
+.container {
+    width: 100%;
+    max-width: 1200px;  /* Max width untuk memastikan konten tidak terlalu lebar */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style umum untuk form */
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Tambahkan margin untuk jarak antara teks dan elemen lainnya */
+p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Style input dan textarea */
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="radio"] {
+    margin: 5px 10px;
+}
+
+/* Tombol Submit */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style untuk halaman login dan register */
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style tabel di dashboard */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+
+table td {
+    font-size: 14px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style untuk halaman dashboard */
+.dashboard-container {
+    display: flex;
+    justify-content: center; /* Pastikan konten rata tengah */
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+    border-radius: 8px;
+    text-align: center; /* Menambahkan text-align center di sidebar */
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Konten utama */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    text-align: left; /* Teks dalam konten utama sejajar kiri */
+}
+
+.main-content h2 {
+    text-align: center;
+    color: #333;
+}
+
+.main-content h3 {
+    text-align: center;
+    color: #333;
+}
+
+/* Tombol Download */
+.btn-download {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.btn-download:hover {
+    background-color: #45a049;
+}
+
+/* Style untuk halaman absen */
+.absen-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.absen-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.absen-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.absen-container label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Grouping radio buttons */
+.radio-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.radio-group input {
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .btn-download {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    table th, table td {
+        font-size: 12px;
+    }
+
+    .absen-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
