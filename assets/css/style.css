@@ -168,6 +168,7 @@ table tr:nth-child(even) {
 
 /* Konten utama */
 .main-content {
+    overflow-x: auto;
     flex: 1;
     padding: 20px;
     background-color: #fff;
@@ -283,3 +284,36 @@ textarea {
         margin: 20px auto;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .dashboard-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    table th, table td {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .btn-download {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
